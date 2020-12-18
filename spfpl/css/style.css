@@ -12,7 +12,7 @@
 body {
   background: #fff;
   color: #666666;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size:15px !important;
 }
 
@@ -138,7 +138,7 @@ h6 {
 #header {
   padding: 10px 0  30px;
   background: #fff;
-  height: 60px;
+  height: 65px;
   opacity:1;
   position: fixed;
   left: 0;
@@ -245,7 +245,7 @@ h6 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 #intro p {
@@ -385,7 +385,9 @@ h6 {
 /* Nav Meu Container */
 
 #nav-menu-container {
-  float: right;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
   margin: 10;
 }
 
@@ -397,8 +399,8 @@ h6 {
   display: inline-block;
   color: #a9a9a9;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 16px;
   text-transform: uppercase;
   outline: none;
 }
@@ -691,6 +693,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
       /*height: 480px;*/
 }
+#about .about-col #read{
+    color:#eb5202;
+    padding:0;
+    margin:0;
+    
+}
 
 #about .about-col .img {
   position: relative;
@@ -706,10 +714,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 8px;
   text-align: center;
   position: absolute;
-  background-color: #eb5202;
+  background-color: #fff;
   border-radius: 50%;
   text-align: center;
-  border: 4px solid #fff;
+  border: 4px solid #eb5202;
   left: calc( 50% - 32px);
   bottom: -30px;
   transition: 0.3s;
@@ -723,7 +731,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-col:hover .icon {
-  background-color:  #fff;
+  background-color:  #eb5202;
 }
 
 #about .about-col:hover i {
@@ -731,6 +739,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-col h2 {
+  text-transform: uppercase;
   color: rgb(128,128,128);
   text-align: center;
   font-weight: 700;
@@ -764,7 +773,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 40px 0;
 }
 #pg{
-  height:600px !important;
+  height:800px !important;
   background-color:#d8d8d8;
 
 }
@@ -774,7 +783,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #policiesGuidelines .box:hover .icon {
-  background-color: #fff;
+  background-color: #eb5202;
 }
 
 #policiesGuidelines .icon {
@@ -784,10 +793,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 64px;
   padding-top: 8px;
   text-align: start;
-  background-color: #eb5202;
+  background-color: #fff;
   border-radius: 50%;
   text-align: center;
-  border: 4px solid #fff;
+  border: 4px solid #eb5202;
   left: calc( 50% - 32px);
   bottom: -30px;
   transition: 0.3s;
@@ -832,6 +841,104 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+#policiesGuidelines #card2{
+  margin: 0;
+  padding: 0;
+}
+
+#policiesGuidelines #card2:hover .title2 {
+  color:#eb5202;
+}
+
+#policiesGuidelines #card2 .icon2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: start;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #eb5202;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#policiesGuidelines #card2:hover .icon2 {
+  border: 4px solid #eb5202;
+  background-color: #eb5202;
+}
+
+#policiesGuidelines #card3{
+  background-color: hotpink;
+}
+
+
+
+#policiesGuidelines .card #card3 .icon{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: start;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #eb5202;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#policiesGuidelines .card #card3:hover .icon{
+  background-color: #eb5202;
+  border: 4px solid #fff;
+}
+
+#policiesGuidelines .card #card3 .form-group{
+  display: none;
+}
+#policiesGuidelines .card #card3:hover .form-group{
+  display:inline-block;
+}
+
+
+#policiesGuidelines .card #card3:hover #title1{
+  color: #eb5202;
+}
+
+
+#policiesGuidelines .card #card4 .icon2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: start;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #eb5202;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#policiesGuidelines .card #card4:hover .icon2{
+  background-color: #eb5202;
+  border: 4px solid #fff;
+}
+
+
+#policiesGuidelines .card #card4:hover .title2{
+  color: #eb5202;
+}
+
+
+
   /*Product 1*/
   
   #products {
@@ -848,7 +955,11 @@ body.mobile-nav-active #mobile-nav-toggle {
  color: #eb5202;
 }
 #products .box2:hover .icon {
-  background-color: #fff;
+  background-color: #eb5202;
+  
+}
+#products .box2:hover .box-btn {
+     color: #eb5202;
 }
 
 
@@ -857,13 +968,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 64px;
   padding-top: 8px;
   text-align: center;
-  background-color: #eb5202;
+  background-color: #fff;
   border-radius: 50%;
   text-align: center;
-  border: 4px solid #fff;
+  border: 4px solid #eb5202;
   left: calc( 50% - 32px);
   bottom: -30px;
   transition: 0.3s;
+}
+#products .icon:hover  {
+  background-color:#eb5202;
 }
 
 #products .icon i {
@@ -875,6 +989,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #products .icon i:hover {
     color: #eb5202;
+    background-color:#eb5202;
 }
 
 #products .title {
@@ -885,7 +1000,7 @@ body.mobile-nav-active #mobile-nav-toggle {
  
 }
 
-#products .box2:hover .title {
+#products .box2:hover .title  {
  color: #eb5202;
 }
 
@@ -893,7 +1008,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#products .box:hover .title{
+#products .box:hover .box-btn{
   color: #eb5202;
 }
 
@@ -1389,7 +1504,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .card1:hover i {
-  background-color: #fff;
+  background-color: #eb5202;
 }
 #contact .contact-info {
   margin-bottom: 20px;
@@ -1412,10 +1527,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 64px;
   padding-top: 8px;
   text-align: center;
-  background-color: #eb5202;
+  background-color: #fff;
   border-radius: 50%;
   text-align: center;
-  border: 4px solid #fff;
+  border: 4px solid #eb5202;
   left: calc( 50% - 32px);
   bottom: -30px;
   transition: 0.3s;
@@ -1426,7 +1541,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .card:hover i {
-    background-color: #fff;
+    background-color: #eb5202;
 }
 
 #contact .contact-info address,
@@ -1536,7 +1651,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top {
   background: #111;
-  padding: 60px 0 30px 0;
+  padding: 30 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
