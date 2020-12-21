@@ -1,29 +1,22 @@
 <?php
-
-if(isset($_POST['submit']))
-{
-      $name = $_POST['name'];
-      $email = $_POST['email'];
-      $number = $_POST['number'];
-      $subject = $_POST['subject'];
-      $message = $_POST['message'];
-
-      if($name == '' || $email =='' || $number == '' || $subject == '' || $message == '' )
-      {
-            echo "<script>alert('All Filed Required')</script>";
-      }
-      else{
-            $from = 'SPFPL ';
-            $webmaster = 'spfinance@shapoorji.com';
-            $to = "tofik.pardeshi@neologicx.com";
-
-            $sub = "Contact Us";
-
-            $headers = "From: ".$name." <".$email.">\r\n"; $headers = "Reply-To: ".$_POST['email']."\r\n"; 
-            $headers = "Content-type: text/html; charset=iso-8859-1\r\n";
-            'X-Mailer: PHP/' . phpversion();
-
-            $mes = "
+if($_POST['sel1']==2){
+         $to= 'muskan.verma@neologicx.com';
+        }
+     
+        elseif($_POST['sel1']==3)
+        {
+        $to = 'muskan0497@gmail.com';
+        }
+        elseif($_POST['sel1']==4)
+        {
+        $to = 'tofik.pardeshi@neologicx.com';
+        }
+        
+        
+       $subject .=  $_POST['subject'].'-(Message from Website)'; 
+    
+ 
+    $message = "
         <html>
         <head>
         <title></title>
@@ -36,6 +29,11 @@ if(isset($_POST['submit']))
         <tr>
         <th style='text-align:justify'>Name : </th>
         <th style='text-align:justify'>".$_POST['name']."</th>
+        </tr>
+        
+         <tr>
+        <th style='text-align:justify'>Name : </th>
+        <th style='text-align:justify'>".$_POST['organisation']."</th>
         </tr>
         
         
@@ -55,10 +53,6 @@ if(isset($_POST['submit']))
         <th style='text-align:justify'>".$_POST['sel1']."</th>
         </tr>
         
-        <tr>
-        <th style='text-align:justify'>Subject : </th>
-        <th style='text-align:justify'>".$_POST['subject']."</th>
-        </tr>
         
         <tr>
         <th style='text-align:justify'>Message : </th>
@@ -69,17 +63,24 @@ if(isset($_POST['submit']))
         
         </table>
         </body>
-        </html>";
-
-        $sendMail = mail($to, $subject, $mes, $headers);
-
-        echo "<script>alert('Your Form submitted')</script>";
-
-        echo "<script>window.open(index.php?sent=Your form has submmited)</script>";
-
-        
+        </html>
+        ";
     
-      }
-}
+    $headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    
+    $headers .= 'From: ' . $_POST['email']; "\r\n";
 
+    if(mail($to, $subject, $message, $headers))
+    {
+    //echo json_encode(['successfully send']);
+    //header('Location: index.php');
+    
+    }
+    else 
+    {
+        echo json_encode(['success'=>false]);
+    }
+   
+ 
 ?>

@@ -1,4 +1,4 @@
-/*
+card/*
   Theme Name: BizPage
   Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
   Author: BootstrapMade.com
@@ -12,7 +12,7 @@
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial !important;
   font-size:15px !important;
 }
 
@@ -42,6 +42,7 @@ a:focus {
 p {
   padding: 0;
   margin: 0 0 30px 0;
+  font-family: Arial !important;
 }
 
 h1,
@@ -50,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -165,7 +166,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial;
   font-weight: 700;
   letter-spacing: 3px;
 }
@@ -301,7 +302,7 @@ h6 {
 }
 
 #intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -385,9 +386,7 @@ h6 {
 /* Nav Meu Container */
 
 #nav-menu-container {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
+ float:right;
   margin: 10;
 }
 
@@ -398,9 +397,9 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: #a9a9a9;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 13px;
   text-transform: uppercase;
   outline: none;
 }
@@ -500,7 +499,7 @@ h6 {
   display: block;
   outline: none;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial;
 }
 
 #mobile-nav ul li a:hover {
@@ -732,6 +731,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-col:hover .icon {
   background-color:  #eb5202;
+  border: 4px solid #fff;
 }
 
 #about .about-col:hover i {
@@ -766,14 +766,45 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Services Section
 --------------------------------*/
+/* Recent update icon */
+
+#policiesGuidelines #my-img-pg2 .card #RUicon{
+  color:#eb5202;
+
+}
+
+#policiesGuidelines #my-img-pg2 .card .icon{
+  background-color:#fff;
+  border: 4px solid #eb5202;
+
+}
+#policiesGuidelines #my-img-pg2 .card:hover .icon{
+  background-color:#eb5202;
+  
+  border: 4px solid #fff;
+
+}
+
+#policiesGuidelines #my-img-pg2 .card:hover #RUicon{
+  color:#fff;
+
+}
+
+/* Recent update icon end */
+
 
 #policiesGuidelines {
   background: #fff;
   background-size: cover;
   padding: 60px 0 40px 0;
 }
+#pg1{
+  height:650px !important;
+  background-color:#d8d8d8;
+
+}
 #pg{
-  height:800px !important;
+  height:650px !important;
   background-color:#d8d8d8;
 
 }
@@ -784,6 +815,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #policiesGuidelines .box:hover .icon {
   background-color: #eb5202;
+  border: 4px solid #fff;
 }
 
 #policiesGuidelines .icon {
@@ -802,7 +834,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-
+.pg-text-justify{
+    text-align:left;
+    margin: 0 0 30px 0 !important;
+    color:#ccc;
+}
 #policiesGuidelines .icon i {
   color: #fff;
   font-size: 22px;
@@ -841,16 +877,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-#policiesGuidelines #card2{
+#policiesGuidelines #pg1{
   margin: 0;
   padding: 0;
 }
 
-#policiesGuidelines #card2:hover .title2 {
+#policiesGuidelines #pg1:hover .title2 {
   color:#eb5202;
 }
 
-#policiesGuidelines #card2 .icon2 {
+#policiesGuidelines #pg1 .icon2 {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 64px;
@@ -866,18 +902,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#policiesGuidelines #card2:hover .icon2 {
-  border: 4px solid #eb5202;
+#policiesGuidelines #pg1:hover .icon2 {
+  border: 4px solid #fff;
   background-color: #eb5202;
 }
 
-#policiesGuidelines #card3{
-  background-color: hotpink;
-}
 
 
 
-#policiesGuidelines .card #card3 .icon{
+#policiesGuidelines .card #pg2 .icon{
   margin-top: 20px;
   margin-bottom: 20px;
   width: 64px;
@@ -892,26 +925,35 @@ body.mobile-nav-active #mobile-nav-toggle {
   bottom: -30px;
   transition: 0.3s;
 }
-
-#policiesGuidelines .card #card3:hover .icon{
+#policiesGuidelines #pg2:hover .icon{
   background-color: #eb5202;
   border: 4px solid #fff;
 }
 
-#policiesGuidelines .card #card3 .form-group{
+
+#policiesGuidelines #pg2 .icon #HR{
+  color:#eb5202;
+}
+
+#policiesGuidelines #pg2:hover .icon #HR{
+  color:#fff;
+}
+
+
+#policiesGuidelines .card #pg2 .form-group{
   display: none;
 }
-#policiesGuidelines .card #card3:hover .form-group{
+#policiesGuidelines .card #pg2:hover .form-group{
   display:inline-block;
 }
 
 
-#policiesGuidelines .card #card3:hover #title1{
+#policiesGuidelines .card #pg2:hover #title1{
   color: #eb5202;
 }
 
 
-#policiesGuidelines .card #card4 .icon2{
+#policiesGuidelines .card #pg3 .icon2{
   margin-top: 20px;
   margin-bottom: 20px;
   width: 64px;
@@ -927,17 +969,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#policiesGuidelines .card #card4:hover .icon2{
+#policiesGuidelines .card #pg3:hover .icon2{
   background-color: #eb5202;
   border: 4px solid #fff;
 }
 
 
-#policiesGuidelines .card #card4:hover .title2{
+#policiesGuidelines .card #pg3:hover .title2{
   color: #eb5202;
 }
-
-
 
   /*Product 1*/
   
@@ -953,9 +993,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #products .box2:hover .icon i {
  color: #eb5202;
+ 
 }
 #products .box2:hover .icon {
   background-color: #eb5202;
+  border: 4px solid #fff;
   
 }
 #products .box2:hover .box-btn {
@@ -978,6 +1020,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #products .icon:hover  {
   background-color:#eb5202;
+  
 }
 
 #products .icon i {
@@ -1041,7 +1084,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -1073,7 +1116,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #skills .progress .skill {
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial;
   line-height: 35px;
   padding: 0;
   margin: 0 0 0 20px;
@@ -1119,7 +1162,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #facts .counters span {
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial;
   font-weight: bold;
   font-size: 48px;
   display: block;
@@ -1129,7 +1172,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial;
   font-size: 14px;
   color: #111;
 }
@@ -1491,6 +1534,32 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 
+#contact  #map{
+  color:#eb5202;
+
+}
+
+#contact  .card:hover #map{
+  background-color: #eb5202;
+  color:#fff;
+  border: 4px solid #fff;
+
+}
+
+#contact .contact-info  #map{
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #eb5202;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
 #contact {
   padding: 60px 0;
 }
@@ -1505,6 +1574,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .card1:hover i {
   background-color: #eb5202;
+  border: 4px solid #fff;
 }
 #contact .contact-info {
   margin-bottom: 20px;
@@ -1538,6 +1608,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .card:hover i {
   color: #eb5202;
+  border: 4px solid #fff;
 }
 
 #contact .card:hover i {
@@ -1638,6 +1709,184 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #eb5202;
 }
 
+
+
+
+#contact1  #map{
+  color:#eb5202;
+
+}
+
+#contact1  .card:hover #map{
+  background-color: #eb5202;
+  color:#fff;
+  border: 4px solid #fff;
+
+}
+
+#contact1 .contact-info  #map{
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #eb5202;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#contact1 {
+  padding: 60px 0;
+}
+
+#contact1 .card:hover,#contact1 .card:hover h3{
+	color: #eb5202;
+}
+.card{
+    height:375px !important;
+    background-color:#d8d8d8;
+}
+
+#contact1 .card1:hover i {
+  background-color: #eb5202;
+  border: 4px solid #fff;
+}
+#contac1t .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+#contact1 .contact-info i {
+  font-size: 28px;
+  align-self:center;
+  padding: 13px 17px !important; 
+  /* padding-left: 10px; */
+  /* display: inline-block; */
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#contact1 .contact-info i {
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #eb5202;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#contact1 .card:hover i {
+  color: #eb5202;
+  border: 4px solid #fff;
+}
+
+#contact1 .card:hover i {
+    background-color: #eb5202;
+}
+
+#contact1 .contact-info address,
+#contact1 .contact-info p {
+  margin-bottom: 0;
+  color: #000;
+}
+
+#contact1 .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+#contact1 .contact-info h3 a{
+    color: #999;
+}
+#contact1 .contact-info h3:hover a {
+    color: #eb5202;
+}
+
+#contact1 .contact-info #con:hover {
+    color: red;
+}
+
+
+#contact1 .contact-info a {
+  color: #000;
+}
+
+#contact1 .contact-info a:hover  {
+  color: #eb5202;
+}
+
+#contact1 .contact-address,
+#contact1 .contact-phone,
+#contact1 .contact-email {
+  margin-bottom: 20px;
+}
+
+#contact1 .form #sendmessage {
+  color: #eb5202;
+  border: 1px solid #eb5202;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact1 .form #errormessage {
+  color: red;
+  display: none;
+  border:  transparent;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact1 .form #sendmessage.show,
+#contact1 .form #errormessage.show,
+#contact1 .form .show {
+  display: block;
+}
+
+#contact1 .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact1 .form input,
+#contact1 .form textarea {
+  padding: 10px 14px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#contact1 .form button[type="submit"] {
+  background: #eb5202;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#contact1 .form button[type="submit"]:hover {
+  background: #eb5202;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1651,7 +1900,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top {
   background: #111;
-  padding: 30 0 30px 0;
+  padding: 30px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1663,7 +1912,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 10px;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial;
   font-weight: 700;
   letter-spacing: 3px;
   border-left: 4px solid #eb5202;
@@ -1673,7 +1922,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial;
   color: #eee;
 }
 
@@ -1819,6 +2068,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  
+   #contact1 .contact-address,
+  #contact1 .contact-phone,
+  #contact1 .contact-email {
+    padding: 20px 0;
+  }
+
+  #contact1 .contact-phone {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
