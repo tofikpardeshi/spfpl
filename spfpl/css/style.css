@@ -14,6 +14,12 @@ body {
   color: #666666;
   font-family: Arial !important;
   font-size:15px !important;
+  -webkit-touch-callout: none; /* iOS Safari */
+ -webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+ -moz-user-select: none; /* Firefox */
+ -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
 }
 
 #icons{
@@ -190,7 +196,7 @@ h6 {
 #intro {
   display: table;
   width: 100%;
-  height: 100vh;
+  height:auto;
   background: #000;
 }
 
@@ -204,7 +210,7 @@ h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -260,20 +266,21 @@ h6 {
 }
 
 #intro .carousel-fade .carousel-inner .carousel-item {
-  transition-property: opacity;
+  /*transition-property: opacity;*/
 }
 
 #intro .carousel-fade .carousel-inner .carousel-item,
 #intro .carousel-fade .carousel-inner .active.carousel-item-left,
 #intro .carousel-fade .carousel-inner .active.carousel-item-right {
-  opacity: 0;
+    opacity: 0;
+   
 }
 
 #intro .carousel-fade .carousel-inner .active,
 #intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
 #intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
-  transition: 0.5s;
+  
 }
 
 #intro .carousel-fade .carousel-inner .carousel-item-next,
@@ -602,7 +609,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-header p {
   text-align: center;
   padding-bottom: 30px;
-  color: #000;
+  color: #555;
 }
 
 /* Section with background
@@ -693,10 +700,16 @@ body.mobile-nav-active #mobile-nav-toggle {
       /*height: 480px;*/
 }
 #about .about-col #read{
-    color:#eb5202;
+    color:rgb(128,128,128);
     padding:0;
     margin:0;
     
+}
+#about .about-col:hover #read{
+  color:#eb5202;
+  padding:0;
+  margin:0;
+  
 }
 
 #about .about-col .img {
@@ -747,6 +760,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0;
   margin: 40px 0 12px 0;
 }
+#about .about-col:hover h2 {
+  color: #eb5202;
+}
 
 #about .about-col h2 a {
   color: #000;
@@ -759,7 +775,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-col p {
   font-size: 15px;
   line-height: 24px;
-  color: #000000;
+  color: #555;
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
 }
@@ -796,7 +812,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #policiesGuidelines {
   background: #fff;
   background-size: cover;
-  padding: 60px 0 40px 0;
+  padding: 60px 0 -40px 0;
 }
 #pg1{
   height:650px !important;
@@ -984,7 +1000,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #products {
   background: #fff;
   background-size: cover;
-  padding: 60px 0 40px 0;
+  padding: 90px 0 40px 0;
 }
 
 #products .box {
@@ -1618,7 +1634,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .contact-info address,
 #contact .contact-info p {
   margin-bottom: 0;
-  color: #000;
+  color: #555;
 }
 
 #contact .contact-info h3 {
@@ -1641,7 +1657,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #contact .contact-info a {
-  color: #000;
+  color: #555;
 }
 
 #contact .contact-info a:hover  {
@@ -1796,7 +1812,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact1 .contact-info address,
 #contact1 .contact-info p {
   margin-bottom: 0;
-  color: #000;
+  color: #555;
 }
 
 #contact1 .contact-info h3 {
@@ -1808,6 +1824,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #contact1 .contact-info h3 a{
     color: #999;
+}
+#contact1 .card1:hover h3{
+    color: #eb5202;
 }
 #contact1 .contact-info h3:hover a {
     color: #eb5202;
@@ -1893,7 +1912,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer {
   background: #000;
-  padding: 0 0 30px 0;
+  padding: 0;
+  padding:0;
   color: #eee;
   font-size: 14px;
 }
@@ -2054,10 +2074,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Responsive Media Queries
 --------------------------------------------------------------*/
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width:764px){
+    
+    .location .map{
+    background-color: #eb5202;
+    width: 275px!important;
+  }
+  
   #icons{
     margin-left: 50px;
   }
+  .form-group #subject{
+    margin-top: -16px;
+  }
+  .footer-social{
+    margin-top: -88px;
+  }
+  .footer-social .bottom-footer{
+    margin-top: 25px!important;
+    padding: 0;
+  }
+  
 }
 
 @media (min-width: 768px) {
@@ -2066,6 +2103,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #contact .contact-email {
     padding: 20px 0;
   }
+  
 
   #contact .contact-phone {
     border-left: 1px solid #ddd;
@@ -2124,8 +2162,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #intro h2 {
-    font-size: 28px;
+    font-size: 18px;
     line-height:1.5;
+    margin-top: 50px;
   }
 
   #nav-menu-container {
@@ -2135,4 +2174,56 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mobile-nav-toggle {
     display: inline;
   }
+}
+
+ #logo-home{
+                max-height: 87px !important;
+    margin-top: -22px !important;
+    margin-left: -17px !important;
+        }
+        
+        @media only screen and (max-width: 600px) {
+    #logo-home{
+                height: 87px;
+                max-height: 55px !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+        }
+     
+}
+@media only screen and (min-width: 600px) {
+    
+     #logo-home{
+                height: 87px;
+                max-height: 55px !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+        }
+   
+}
+@media only screen and (min-width: 768px) {
+     #logo-home{
+                height: 87px;
+                max-height: 55px !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+        }
+   
+}
+@media only screen and (min-width: 992px) {
+     #logo-home{
+                
+                max-height: 87px !important;
+    margin-top: -22px !important;
+    margin-left: -17px !important;
+        }
+    
+}
+@media only screen and (min-width: 1200px) {
+     #logo-home{
+               max-height: 87px !important;
+     margin-top: -22px !important;
+    margin-left: -17px !important;
+        }
+    
 }

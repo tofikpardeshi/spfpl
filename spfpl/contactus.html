@@ -1,0 +1,808 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SP Finance</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="favicon.ico" rel="icon">
+  <link href="favicon.ico" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+
+      
+      .map-container-5 iframe{
+         margin-top: -20px;
+         padding: 0;
+         left:0;
+         top:0;
+         height:100%;
+         width:100%;
+         }
+      
+  
+  select {
+            color: #555;
+            opacity:0.7;
+            font-size: 15px;
+          }
+          option:not(:first-of-type) {
+            color: #555;
+          }
+
+     .more {
+      display: none;
+    }
+    #morev {display: none;}
+  #more {display: none;}
+   #more1 {display: none;}
+   #more2 {display: none;}
+   #more3 {display: none;}
+   #more4 {display: none;}
+   #more5 {display: none;}
+      .box-btn1{
+           border: none;
+    background: transparent;
+    color: rgb(128,128,128);
+    font-size: 15px;
+        cursor: pointer;
+   }
+   .box-btn1:hover{
+     color: #eb5202;
+   }
+   
+   .box-btn{
+           border: none;
+    background: transparent;
+    color: rgb(128,128,128);
+    font-size: 15px;
+        cursor: pointer;
+   }
+    .box2 .box-btn:hover{
+    color: #eb5202;
+   }
+  .box2{
+    background-color: #d8d8d8 ;
+    color:#000;
+  }
+  #card{
+      
+    height:375px !important;
+    background-color:#d8d8d8;
+
+  }
+   #cardpol{
+      
+    height:665px !important;
+    background-color:#d8d8d8;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+  }
+  #contact .card1:hover i,#contact .card1:hover h3{
+	color: #eb5202;
+}
+.card1{
+    height:auto !important;
+    background-color:#d8d8d8;
+}
+
+.card1 .form-control{
+    display:none;
+}
+
+.card1:hover .form-control{
+    display:inline-block;
+}
+.card1{
+    height:auto !important;
+    background-color:#d8d8d8;
+    color:#fff;
+}
+.readed{
+    float:right;
+    color:rgb(128,128,128);
+    margin: 20px 0;
+}
+
+#about .about-col:hover #icon1 .img {
+    
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Vision.png');
+}
+
+#about .about-col:hover #icon2 .img {
+    
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Philosophy.png');
+}
+
+#about .about-col:hover #icon3 .img {
+    
+     content: url('http://neologicx.in/spfpl/White%20Color/PNG/Culture.png');
+}
+
+
+
+
+
+#my-img-p1:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Loan.png');
+    width:50px;
+   
+      
+}
+
+
+
+#my-img-p2:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Shares.png');
+    width:50px;
+      
+}
+
+#my-img-p3:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Real-Estate.png');
+    width:50px;
+      
+}
+
+#my-img-p4:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Mezzanine.png');
+    width:50px;
+      
+}
+
+#my-img-p5:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Last-Mile.png');
+    width:50px;
+      
+}
+
+#my-img-pol1:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Annual-Report.png');
+    width:50px;
+      
+}
+
+#my-img-pol2:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Risk-Management.png');
+    width:50px;
+      
+}
+#my-img-pol5:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/hisw.png');
+    width:50px;
+      
+}
+#my-img-pol6:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/refw.png');
+    width:50px;
+      
+}
+
+
+
+
+#card #icon2:hover .img {
+   
+    width:64px;
+      
+}
+
+#my-img-pol3:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Policies.png');
+    width:50px;
+      
+}
+
+#my-img-pol4:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Ombudsman.png');
+    width:50px;
+      
+}
+
+#my-img-con1:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Registered-Office.png');
+    width:50px;
+      
+}
+
+#my-img-con2:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Corporate-Office.png');
+    width:50px;
+      
+}
+
+#my-img-con3:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Branch-Office.png');
+    width:50px;
+      
+}
+
+#my-img-con4:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/E-mail.png');
+    width:50px;
+      
+}
+
+#my-img-con5:hover .img {
+    content: url('http://neologicx.in/spfpl/White%20Color/PNG/Telephone.png');
+    width:50px;
+      
+}
+  
+#myBtnv :hover{
+    color:#eb5202;
+}
+#mgta{
+    color: rgb(128,128,128);
+}
+#mgta:hover{
+    color: #eb5202;
+}
+</style>
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <!--<h1> <a href="#intro" class="scrollto">SP Finance Logo</a></h1>
+        Uncomment below if you prefer to use an image logo -->
+         <a href="#"><img src="/spfpl/SP Finance c2c.png" class="pb-2" alt="logo" title="" id="logo-home" ></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li ><a href="index.php">Home</a></li>
+          <li ><a href="about.html" >About Us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="policiesguidelines.html">Policies & Guidelines</a></li>
+          <!--<li><a href="#team">Team</a></li>
+          <li class="menu-has-children"><a href="">Drop Down</a>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>-->
+          <!--<li><a href="#publicDisclosures">Public Disclosures</a></li>-->
+           <!--<li style="color:#a9a9a9"><a>Investor's Login</a></li>-->
+          <!--<li><a href="#team">Core Team</a></li>-->
+          <li class="menu-active"><a href="#contacts">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+    <section class="section-bg wow fadeInUp my-5" id="contacts" >
+            <div class="container ">
+               <div class="section-header mt-5" style="padding-top:50px;">
+                  <h3 class="">Contact Us</h3>
+                  <p class="h6 mb-4 font-weight-bold"> SHAPOORJI PALLONJI FINANCE PRIVATE LIMITED</p>
+                  <p style="margin-top:-50"><span class=" text-center font-weight-normal"> CIN:  U65920MH1994PTC077480</span></p>
+               </div>
+               <div  id="contact1">
+                  <div class="container" style="margin-top:-50px;">
+                     <div class="row row contact-info pb-5" style="margin-top:-125px!important" >
+                        <div class="col-sm-12 col-md-6 col-lg-3 mt-5 "  id="my-img-con1">
+                           <div class="card border-0 contact-address " style="margin-top:-25px; padding:0;">
+                              <div class="card-body text-center">
+                                 <i class="d-flex justify-content-start" aria-hidden="true">
+                                 <img src="Orange Color/PNG/Registered-Office.png" alt="" style="height:22px;" class="img-fluid img mt-1" >
+                                 </i>
+                                 <h3 class="text-uppercase mt-3 d-flex justify-content-start" style="text-align:left;">Registered & Corporate Office</h3>
+                                 <p class="text-justify d-flex justify-content-start">SP Centre, Courtyard 10-B, 41/44, Minoo Desai Marg, Colaba, Mumbai - 400005,
+                                    Maharashtra, India
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 mt-5 mb-3"  id="my-img-con2" >
+                           <div class="card border-0" style="margin-top:-25px;">
+                              <div class="card-body card-body-cascade text-center ">
+                                 <i class="fa fa-map-marker d-flex justify-content-center" id="map" aria-hidden="true"></i>
+                                 <h3 class="text-uppercase mt-3" style="text-align:left;">Locate Us On Google Map</h3>
+                              </div>
+                                 <div  id="map-container-google-8" class=" map-container-5" style="height: 240px">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d966226.6474818272!2d72.830781!3d18.917099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e6ce35752f93821!2sShapoorji%20Pallonji!5e0!3m2!1sen!2sin!4v1611052860247!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                  </div>
+                              
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 mt-5 mb-3"  id="my-img-con3">
+                           <div class="card border-0" style="margin-top:-25px;">
+                              <div class="card-body text-center">
+                                 <i class="d-flex justify-content-start" aria-hidden="true">
+                                 <img src="Orange Color/PNG/Branch-Office.png" alt="" style="height:22px;" class="img-fluid img mt-1" >
+                                 </i>
+                                 <h3 class="text-uppercase mt-3 d-flex justify-content-start">BRANCH OFFICE</h3>
+                                 <address class="text-justify d-flex justify-content-start">Office No. 1222, Regus Business Centre, Regus Cyber City, Level 12,
+                                    Tower C, Building Number 8, DLF Cyber City Complex, DLF City Phase II, Gurgaon - 122002, Haryana,
+                                    India
+                                 </address>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 mt-5 mb-3">
+                           <div id="card">
+                              <div class="card1 border-0" style="margin-top:-25px;">
+                                 <div class="card-body text-center"  id="my-img-con4">
+                                    <i class="d-flex justify-content-start" aria-hidden="true">
+                                    <img src="Orange Color/PNG/E-mail.png" alt="" style="height:22px;" class="img-fluid img mt-1" >
+                                    </i>
+                                    <h3 class="text-uppercase mt-3 d-flex justify-content-start">email</h3>
+                                    <p class="d-flex justify-content-start"><a href="mailto:spfinance@shapoorji.com" style="color:#555;">spfinance@shapoorji.com</a></p>
+                                 </div>
+                              </div>
+                              <div class="card1 border-0" style="margin-top:-25px;">
+                                 <div class="card-body text-center"  id="my-img-con5">
+                                    <i class="d-flex justify-content-start" aria-hidden="true">
+                                    <img src="Orange Color/PNG/Telephone.png" alt="" style="height:22px;" class="img-fluid img mt-1" >
+                                    </i>
+                                    <h3 class="text-uppercase d-flex justify-content-start">TELEPHONE</h3>
+                                    <p class="d-flex justify-content-start"><a href="tel:+912267490000" style="color:#555;">+91 22 6749 0000</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form" >
+                     <div id="sendmessage">Your message has been sent. Thank you!</div>
+                     <div id="errormessage"></div>
+                     <form action="form.php" method="post" id="contactusForm" role="form" class="contactForm">
+                        <div class="form-row">
+                           <div class="form-group col-md-6">
+                              <input type="text" name="name" required class="form-control" id="name" placeholder="Your Name*"
+                                 data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validation"></div>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <input type="text" name="organisation" required class="form-control" id="organisation" placeholder="Your Organisation Name*"
+                                 data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validation"></div>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <input type="email" class="form-control" required name="email" id="email" placeholder="Your Email*"
+                                 data-rule="email" data-msg="Please enter a valid email" />
+                              <div class="validation"></div>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <input type="text" name="number" required class="form-control" id="number" placeholder="Your Mobile Number*"
+                                 data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validation"></div>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <div class="form-group">
+                                 <select class="form-control" id="sel1" name="sel1" placeholder="" required>
+                                    <option value="" disabled selected hidden 
+                                    style="color:red; font-size:15px!important;">Select Purpose*</option>
+                                    <option value="2" id="dd1">2</option>
+                                    <option value="3" id="dd2">3</option>
+                                    <option value="4" id="dd3">4</option>
+                                 </select>
+                                 <div class="validation"></div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <input type="text" class="form-control" name="subject" id="subject" required placeholder="Subject*"
+                                 data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validation"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <textarea class="form-control" style="color:#555;" required id="word_count" name="message" rows="5" data-rule="required"
+                              data-msg="Please write something for us" placeholder="Message*"></textarea>
+                           Total word count: <span id="display_count" >0</span> words. Words left: <span id="word_left">200</span>
+                           <div class="validation"></div>
+                        </div>
+                        <div class="text-center"><button type="submit" name="submit">Send Message</button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+    
+     <!--==========================
+         Footer
+         ============================-->
+      <footer id="footer" style="margin-top:-50px!important">
+         <div class="footer-top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-4 col-md-4 footer-links">
+                     <h4>Useful Links</h4>
+                     <ul>
+                        <li class="font-weight-normal"><i class="ion-ios-arrow-right"></i> <a href="index.php">Home</a></li>
+                        <li class="font-weight-normal" ><i class="ion-ios-arrow-right"></i> <a href="about.html" >About Us</a></li>
+                        <li class="font-weight-normal"><i class="ion-ios-arrow-right"></i> <a href="product.html">Products</a></li>
+                        <li class="font-weight-normal"><i class="ion-ios-arrow-right"></i> <a href="policiesguidelines.html">Policies & Guidelines</a></li>
+                        <!--<li class="font-weight-normal"><i class="ion-ios-arrow-right"></i> <a >Investor's Login</a></li>-->
+                        <!--<li><i class="ion-ios-arrow-right"></i> <a href="#publicDisclosures">Public Disclosures</a></li>-->
+                        <li class="font-weight-normal"><i class="ion-ios-arrow-right"></i> <a href="contactus.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-4 footer-contact">
+                     <h4>Contact Us</h4>
+                     <p class="font-weight-normal">
+                        SP Centre, Courtyard 10-B, 41/44, <br> Minoo Desai Marg, Colaba,<br> Mumbai- 400005,<br> Maharashtra,
+                        India.<br>
+                        <strong>Phone:</strong> <a href="tel:+91 22 6749 0000">+91 22 6749 0000</a><br>
+                        <strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=spfinance@shapoorji.com" target="_blank">spfinance@shapoorji.com</a><br>
+                     </p>
+                     <br>
+                     </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 footer-contact footer-social">
+                    <!-- <h4 class="text-uppercase">Follow us on</h4>
+                     <div class="social-links">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                     </div>-->
+                     <div class="bottom-footer" style="margin-top:220px">
+                        &copy; Shapoorji Pallonji Finance Private Limited 2021
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="credits">
+               <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+                  
+                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+            </div>
+         </div>
+      </footer>
+      <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+  
+    
+
+  <!-- JavaScript Libraries -->
+  
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  
+  <!-- ajax  -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+  
+    /*disable Right Click*/
+         // $(document).bind("contextmenu",function(e){
+         // return false;
+         // });
+           
+         /*disable Right Click End*/
+  
+    //Contact Us
+  
+      $(document).ready(function() {
+    $("#contactusForm").on('submit', function(event) {
+        
+        event.preventDefault(); 
+        var formData = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: 'index.php',
+            dataType: "json",
+            data: formData,
+            success: function(response) { 
+                
+               document.getElementById('name').value='';
+               document.getElementById('email').value='';
+               document.getElementById('number').value='';
+              
+               swal("Thank you!","...Your message has been successfully sent. We will contact you very soon!");
+               
+                //alert(response.success);
+                location.href='form.php';
+            },
+            error: function(xhr, status, error){
+                
+               document.getElementById('name').value='';
+               document.getElementById('email').value='';
+               document.getElementById('number').value='';
+               document.getElementById('sel1').value='';
+               document.getElementById('subject').value='';
+               document.getElementById('message1').value='';
+                
+                swal("Thank you!","...Your message has been successfully sent. We will contact you very soon!");
+                console.log(xhr); 
+            }
+        });
+    });
+});
+
+
+
+</script>
+
+   
+ <!-- News Letter -->
+ 
+  <script>
+     
+           $(document).ready(function() {
+    $("#nemailletter").on('submit', function(event) {
+         
+        event.preventDefault(); 
+        var formData1 = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: 'newsletterform.php',
+            // dataType: "json",
+            data: formData1,
+            success: function(response) { 
+                // alert("hello");
+               document.getElementById('emailnews').value='';
+               console.log(response); 
+               swal("Thank you for subscribe our monthly newsletter. We will contact you soon!");
+                
+               
+
+                //alert(response.success);
+                //location.href='newsletterform.php';
+            },
+            error: function(xhr, status, error){
+                
+               document.getElementById('emailnews').value='';
+                // alert("hello");
+                swal("Thank you!","To subscribe to our monthly newsletter, kindly provide your e-mail id below and click on ‘Subscribe’ button!");
+                console.log(xhr); 
+            }
+        });
+    });
+});
+
+</script>
+  
+  <!-- News Letter end -->
+  
+  <!--products read more read less-->
+<script>
+
+var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  var dots1 = document.getElementById("dots1");
+  var moreText1 = document.getElementById("more1");
+  var btnText1 = document.getElementById("myBtn1");
+    var dots2 = document.getElementById("dots2");
+  var moreText2 = document.getElementById("more2");
+  var btnText2 = document.getElementById("myBtn2");
+    var dots4 = document.getElementById("dots4");
+  var moreText4 = document.getElementById("more4");
+  var btnText4 = document.getElementById("myBtn4");
+  
+function myFunction() {
+  
+
+  if (dots.style.display === "none") {
+        
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  
+  } else {
+     
+    //  alert(btnText1);
+       dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more"; 
+    moreText2.style.display = "none";
+      dots4.style.display = "inline";
+    btnText4.innerHTML = "Read more"; 
+    moreText4.style.display = "none";
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+   
+
+    moreText.style.display = "inline";
+   
+ }
+}
+
+
+function myFunction1() {
+ 
+  
+
+  if (dots1.style.display === "none") {
+    // dots1.style.display = "inline";
+    // btnText1.innerHTML = "Read more"; 
+    // moreText1.style.display = "none";
+   
+  } else {
+       
+    // dots1.style.display = "none";
+    // btnText1.innerHTML = "Read less"; 
+    // moreText1.style.display = "inline";
+    
+  }
+}
+
+function myFunction2() {
+       //// alert("3");
+
+  var dots2 = document.getElementById("dots2");
+  var moreText2 = document.getElementById("more2");
+  var btnText2 = document.getElementById("myBtn2");
+  
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more"; 
+    moreText2.style.display = "none";
+  } else {
+        dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+      dots4.style.display = "inline";
+    btnText4.innerHTML = "Read more"; 
+    moreText4.style.display = "none";
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read less"; 
+    moreText2.style.display = "inline";
+  }
+}
+
+function myFunction3() {
+  ////  alert("3");
+  var dots3 = document.getElementById("dots3");
+  var moreText3 = document.getElementById("more3");
+  var btnText3 = document.getElementById("myBtn3");
+  
+
+  if (dots3.style.display === "none") {
+    dots3.style.display = "inline";
+    btnText3.innerHTML = "Read more"; 
+    moreText3.style.display = "none";
+  } else {
+    dots3.style.display = "none";
+    btnText3.innerHTML = "Read less"; 
+    moreText3.style.display = "inline";
+  }
+}
+
+function myFunction4() {
+       //// alert("4");
+
+  var dots4 = document.getElementById("dots4");
+  var moreText4 = document.getElementById("more4");
+  var btnText4 = document.getElementById("myBtn4");
+  
+
+  if (dots4.style.display === "none") {
+    dots4.style.display = "inline";
+    btnText4.innerHTML = "Read more"; 
+    moreText4.style.display = "none";
+  } else {
+      dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+       dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more"; 
+    moreText2.style.display = "none";
+    dots4.style.display = "none";
+    btnText4.innerHTML = "Read less"; 
+    moreText4.style.display = "inline";
+  }
+}
+
+function myFunction5() {
+           //// alert("5656");
+
+  var dots5 = document.getElementById("dots5");
+  var moreText5 = document.getElementById("more5");
+  var btnText5 = document.getElementById("myBtn5");
+  
+
+  if (dots5.style.display === "none") {
+    dots5.style.display = "inline";
+    btnText5.innerHTML = "Read more"; 
+    moreText5.style.display = "none";
+  } else {
+    dots5.style.display = "none";
+    btnText5.innerHTML = "Read less"; 
+    moreText5.style.display = "inline";
+  }
+}
+
+
+function myFunctionv() {
+  var dotsv = document.getElementById("dotsv");
+  var moreTextv = document.getElementById("morev");
+  var btnTextv = document.getElementById("myBtnv");
+  
+
+  if (dotsv.style.display === "none") {
+    dotsv.style.display = "inline";
+    btnTextv.innerHTML = "Read more"; 
+    moreTextv.style.display = "none";
+  } else {
+    dotsv.style.display = "none";
+    btnTextv.innerHTML = "Read less"; 
+    moreTextv.style.display = "inline";
+  }
+}
+</script>
+
+ <!--products read more read less end-->
+
+ <!--aboutus read more read less-->
+<script>
+
+    $(document).ready(function () {
+      $(".readed").click(function () {
+        $(this).prev().toggle();
+        //$(this).sublings(".dots").toggle();
+        if ($(this).text() == 'Read More') {
+          $(this).text('Read Less');
+        }
+        else {
+          $(this).text('Read More');
+        }
+      })
+    })
+
+  </script>
+  
+  <!--aboutus read more read less end-->
+</body>
+
+</html>
